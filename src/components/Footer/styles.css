@@ -1,0 +1,37 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding-bottom: 1.2rem;
+}
+
+.dev-name {
+    color: var(--color-primary);
+}
+
+.dev-name span {
+    transition: all 0.2s ease;
+}
+
+.dev-name span:hover {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-primary-light);
+}
+
+.github-icon {
+    margin-left: 0.6rem;
+
+    width: 2rem;
+    height: 2rem;
+    fill: #24292e;
+}
+
+.github-icon:hover {
+    fill: #434d56;
+}

@@ -1,0 +1,29 @@
+.logo {
+    height: 2.8rem;
+}
+
+.logo > * {
+    transition: all 0.2s ease;
+}
+
+.logo .fill {
+    fill: var(--color-primary);
+}
+
+.logo .stroke {
+    stroke: var(--color-primary);
+}
+
+.logo:hover .fill {
+    fill: var(--color-primary-light);
+}
+
+.logo:hover .stroke {
+    stroke: var(--color-primary-light);
+}
+
+@media (min-width: 768px) {
+    .logo {
+        height: 4.8rem;
+    }
+}

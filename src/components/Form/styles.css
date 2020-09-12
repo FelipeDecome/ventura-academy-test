@@ -1,0 +1,90 @@
+.form {
+    padding: 0 2.8rem;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form legend {
+    margin-bottom: 4.8rem;
+
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 3.2rem;
+
+    width: 100%;
+    height: 5rem;
+}
+
+.input {
+    width: calc(100% - 5rem);
+    height: 100%;
+    padding: 0 2.4rem;
+
+    border: 1px solid var(--color-complement);
+    color: var(--color-texts-input);
+    background: var(--color-background);
+}
+
+.input,
+.label,
+.button {
+    transition: all 0.2s;
+}
+
+.input,
+.button {
+    border-radius: 0.4rem;
+}
+
+.input:focus {
+    border-color: var(--color-primary);
+}
+
+.input:focus + .label {
+    color: var(--color-primary);
+}
+
+.input:focus + .label,
+.input:valid + .label {
+    transform: translateY(-4.8rem);
+    font-weight: 500;
+}
+
+.label {
+    position: absolute;
+    top: 1.4rem;
+    left: 2.4rem;
+
+    color: var(--color-texts-complement);
+    pointer-events: none;
+}
+
+.button {
+    padding: 0.8rem 2.4rem;
+
+    border: none;
+    font-weight: 500;
+    color: var(--color-texts);
+    background: var(--color-primary);
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--color-primary-light);
+}
+
+@media (min-width: 768px) {
+    .input-wrapper {
+        width: 48rem;
+    }
+}

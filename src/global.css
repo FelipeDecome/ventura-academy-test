@@ -1,0 +1,51 @@
+:root {
+    font-size: 60%;
+
+    --color-primary: hsl(288, 84%, 22%);
+    --color-primary-light: hsl(288, 84%, 30%);
+    --color-complement: hsl(0, 0%, 90%);
+
+    --color-texts: hsl(0, 0%, 100%);
+    --color-texts-complement: hsl(0, 0%, 70%);
+    --color-texts-input: hsl(0, 0%, 32%);
+
+    --color-background: hsl(0, 0%, 96%);
+    --color-containers: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+body,
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-background);
+}
+
+body,
+input,
+button,
+textarea {
+    font: 300 1.6rem Poppins;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    :root {
+        font-size: 62.5%;
+    }
+}
