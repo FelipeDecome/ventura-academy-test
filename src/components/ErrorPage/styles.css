@@ -1,0 +1,18 @@
+.error-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-detail {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    color: var(--color-primary);
+}
+
+.error-message {
+    margin-bottom: 3.2rem;
+
+    color: var(--color-texts-input);
+}

@@ -6,6 +6,7 @@ interface Context {
     isValid: boolean;
     setIsValid: Dispatch<SetStateAction<boolean>>;
     registerAction: (action: string) => void;
+    setError: Dispatch<SetStateAction<string>>;
 }
 
 const AppContext = React.createContext<Context>({
@@ -14,6 +15,7 @@ const AppContext = React.createContext<Context>({
     isValid: false,
     setIsValid: () => null,
     registerAction: () => null,
+    setError: () => null,
 });
 
 export default AppContext;

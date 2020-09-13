@@ -7,7 +7,9 @@ import './styles.css';
 const Header: React.FC = () => {
     return (
         <header className="header">
-            <Logo />
+            <a href="/">
+                <Logo />
+            </a>
         </header>
     );
 };

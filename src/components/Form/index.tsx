@@ -5,7 +5,7 @@ import AppContext from '../../context/AppContext';
 import './styles.css';
 
 const Form: React.FC = () => {
-    const { email, setEmail, setIsValid } = useContext(AppContext);
+    const { email, setEmail, setIsValid, setError } = useContext(AppContext);
 
     function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
         const { value } = event.target;
@@ -18,7 +18,11 @@ const Form: React.FC = () => {
 
         const isEmailValid = validator.isEmail(email);
 
-        setIsValid(isEmailValid);
+        if (isEmailValid) {
+            setIsValid(isEmailValid);
+        } else {
+            setError('O email inserido é inválido');
+        }
     }
 
     return (
