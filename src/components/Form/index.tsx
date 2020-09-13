@@ -10,7 +10,7 @@ const Form: React.FC = () => {
     function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
         const { value } = event.target;
 
-        setEmail(value);
+        setEmail(value.toLowerCase());
     }
 
     function handleSubmit(event: FormEvent) {

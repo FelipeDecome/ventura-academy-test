@@ -5,6 +5,7 @@ interface Context {
     setEmail: Dispatch<SetStateAction<string>>;
     isValid: boolean;
     setIsValid: Dispatch<SetStateAction<boolean>>;
+    registerAction: (action: string) => void;
 }
 
 const AppContext = React.createContext<Context>({
@@ -12,6 +13,7 @@ const AppContext = React.createContext<Context>({
     setEmail: () => null,
     isValid: false,
     setIsValid: () => null,
+    registerAction: () => null,
 });
 
 export default AppContext;
