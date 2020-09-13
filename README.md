@@ -1,6 +1,7 @@
 ![Logo](https://github.com/FelipeDecome/ventura-academy-test/blob/master/src/assets/images/Logo.svg)
 
 ### Projeto desenvolvido como teste para Ventura Academy.
+#### [Link do projeto na vercel](https://ventura-academy-test.vercel.app/)
 
 # Instalar e testar
 
