@@ -14,14 +14,24 @@
     color: var(--color-primary);
 }
 
-.dev-name span {
+.dev-link {
+    text-decoration: none;
+}
+
+.dev-link span,
+.github-icon {
     transition: all 0.2s ease;
 }
 
-.dev-name span:hover {
+.dev-link:hover span {
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--color-primary-light);
+}
+
+.dev-link:hover .github-icon {
+    fill: #434d56;
+    transform: scale(1.2);
 }
 
 .github-icon {
@@ -30,8 +40,4 @@
     width: 2rem;
     height: 2rem;
     fill: #24292e;
-}
-
-.github-icon:hover {
-    fill: #434d56;
 }

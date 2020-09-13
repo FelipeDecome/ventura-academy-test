@@ -24,12 +24,12 @@ const Form: React.FC = () => {
     return (
         <form className="form" onSubmit={handleSubmit}>
             <legend>
-                Insira um email <span className="underline">válido</span> para poder assistir ao vídeo
+                Insira um email <span className="underline bold">válido</span> para poder assistir ao vídeo
             </legend>
 
             <div className="input-wrapper">
                 <input
-                    type="text"
+                    type="email"
                     name="email"
                     id="email"
                     className="input"
