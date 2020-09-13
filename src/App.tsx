@@ -6,22 +6,23 @@ import VideoPlayer from './components/VideoPlayer';
 import './global.css';
 import AppContext from './context/AppContext';
 import api from './services/api';
+import ErrorPage from './components/ErrorPage';
 
 function App() {
     const [isValid, setIsValid] = useState(false);
     const [email, setEmail] = useState('');
+    const [error, setError] = useState('');
 
     async function registerAction(actionName: string) {
-        try {
-            await api.post('/actions', { email, actionName }).catch((error) => console.log(error));
-        } catch (error) {
-            console.log(error);
-        }
+        await api.post('/actions', { email, actionName });
     }
 
     return (
-        <AppContext.Provider value={{ isValid, setIsValid, email, setEmail, registerAction }}>
-            <PageContainer>{!isValid ? <Form /> : <VideoPlayer />}</PageContainer>
+        <AppContext.Provider value={{ isValid, setIsValid, email, setEmail, registerAction, setError }}>
+            <PageContainer>
+                {error && <ErrorPage errorMessage={error} />}
+                {!error && (!isValid ? <Form /> : <VideoPlayer />)}
+            </PageContainer>
         </AppContext.Provider>
     );
 }

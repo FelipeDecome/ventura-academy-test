@@ -45,6 +45,7 @@ module.exports = {
         'react/jsx-indent-props': 'off',
         'react/jsx-one-expression-per-line': 'off',
         'jsx-a11y/label-has-associated-control': 'off',
+        'react/prop-types': 'off',
     },
     settings: {
         'import/resolver': {
